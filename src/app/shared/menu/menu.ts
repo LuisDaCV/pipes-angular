@@ -16,28 +16,22 @@ export class Menu implements OnInit {
 
   ngOnInit(): void {
     this.items = [
-      {
-        label: 'Field',
-        items: [{
-          label: 'New',
-          icon: 'pi pi-fw pi-plus',
-          items: [
-            { label: 'Project' },
-            { label: 'Other' }
-          ]
+    {
+      label: 'Angular Pipes',
+      icon: 'pi pi-plus',
+      items: [
+        {
+          label: 'Texts and dates',
+          icon: 'pi pi-folder-plus',
+          routerLink: ' '
         },
-        { label: 'Open' },
-        { label: 'Quit' }
-        ]
-      },
-      {
-        label: 'Edit',
-        icon: 'pi pi-fw pi-pencil',
-        items: [
-          {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-          {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-        ]
-      }
+        {
+          label: 'Numbers',
+          icon: 'pi pi-dollar',
+          routerLink: 'numbers'
+        }
+      ]
+    }
     ]
   }
 
