@@ -1,6 +1,24 @@
 <div>
     <div>
-        <h1 class="font-semibold text-4xl my-5">Number Pipes</h1>
-        <p></p>
+        <h1 class="font-semibold text-4xl my-5">Decimal Pipes and Percentage</h1>
+        <p>Pipes included in angular - usually in the common module</p>
+    </div>
+    <div class="grid grid-cols-3 gap-4 mt-4">
+        <div>
+            <p-card header="Net Sales" subheader="of the current year">
+                <i class="pi pi-dollar"></i>
+                {{netSales() | number:'1.2-2'}}
+            </p-card>
+        </div>
+        <div>
+            <p-card header="Gross Sales" subheader="of the current year">
+                {{netSales() | currency:'CAD':'symbol-narrow':'1.4-4'}}
+            </p-card>
+        </div>
+        <div>
+            <p-card header="Percentage Gain" subheader="of the current year">
+                {{percentage() | percent}}
+            </p-card>
+        </div>
     </div>
 </div>

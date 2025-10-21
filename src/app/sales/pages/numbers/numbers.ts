@@ -10,7 +10,7 @@ import { PrimeNgModules } from '../../../shared/primengModules';
 })
 export class Numbers {
 
-  netSales = signal<number>(256678);
+  netSales = signal<number>(256643243.2478);
   percentage = signal<number>(0.48);
 
 
