@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Parkinsans:wght@300..800&display=swap');
 @import "primeicons/primeicons.css";
+@import "tailwindcss";
+@import "tailwindcss-primeui";
 html,
 body {
     margin: 10px;

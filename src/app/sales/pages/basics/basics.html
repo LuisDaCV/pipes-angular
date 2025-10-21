@@ -1,1 +1,69 @@
-<p>basics works!</p>
+<div>
+    <div>
+        <h1 class="font-semibold text-4xl my-5">Basic Pipes</h1>
+        <p>Pipes included in angular - Usually in the common module</p>
+        <div class="grid grid-cols-4 gap-4 mt-4">
+            <div>
+                <p-card header="Uppercase" [subheader]="name()">
+                    {{name() | uppercase}}
+                </p-card>
+            </div>
+            <div>
+                <p-card header="Lowercase" [subheader]="name()">
+                    {{name() | lowercase}}
+                </p-card>
+            </div>
+            <div>
+                <p-card header="titleCase" [subheader]="name()">
+                    {{name() | titlecase}}
+                </p-card>
+            </div>
+            <div>
+                <p-card header="titleCase" [subheader]="nameComplete()">
+                    {{nameComplete() | titlecase}}
+                </p-card>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="font-semibold text-4xl my-5">Date Pipe</h1>
+        <p>Pipe to display dates</p>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div>
+                <p-card header="Date formats">
+                    <ul class="list-disc ml-5">
+                        <li>Date</li>
+                        <li>Date | date</li>
+                        <li>Date | date:"short"</li>
+                        <li>Date | date:"medium"</li>
+                        <li>Date | date:"long"</li>
+                        <li>Date | date:"full"</li>
+                    </ul>
+                    <hr class="my-2">
+                    <ul class="list-disc ml-5">
+                        <li>date() | date:'long':'GMT-6'</li>
+                        <li>date() | date:'long':'GMT-5':'en'</li>
+
+                    </ul>
+                </p-card>
+            </div>
+            <div>
+                <p-card header="Dates">
+                    <ul class="list-disc ml-5">
+                        <li>{{date()}}</li>
+                        <li>{{date() | date}}</li>
+                        <li>{{date() | date:'short'}}</li>
+                        <li>{{date() | date:'medium'}}</li>
+                        <li>{{date() | date:'long'}}</li>
+                        <li>{{date() | date:'full'}}</li>
+                    </ul>
+                    <hr class="my-2">
+                    <ul class="list-disc ml-5">
+                        <li>{{date() | date:'long':'GMT-6'}}</li>
+                        <li>{{date() | date:'long':'GMT-5':'en'}}</li>
+                    </ul>
+                </p-card>
+            </div>
+        </div>
+    </div>
+</div>

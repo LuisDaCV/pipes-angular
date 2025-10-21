@@ -1,1 +1,19 @@
-<p>not-common works!</p>
+<div>
+    <div>
+        <h1 class="font-semibold my-5 text-4xl ">Not so common Pipes</h1>
+        <p>Pipes included in angular - Usually in the common module</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+            <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+                saludos {{name()}}, es un placer {{gender() | i18nSelect:MapInvitacion}} a nuestro evento 
+            </p-fieldset>
+        </div>
+        <div>
+            <p-fieldset  legend="i18nPlural Pipe"  [toggleable]="true">
+                content
+            </p-fieldset>
+        </div>
+    </div>
+
+</div>
